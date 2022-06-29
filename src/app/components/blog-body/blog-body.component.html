@@ -1,0 +1,22 @@
+<section class="blog-body">
+  <ng-container [ngTemplateOutlet]="blogBodyHeadTemplate"></ng-container>
+  <ng-container [ngTemplateOutlet]="blogBodyTipsTemplate" [ngTemplateOutletContext]="{items: tips}"></ng-container>
+</section>
+
+
+<ng-template #blogBodyHeadTemplate>
+  <div class="row mb-3">
+    <h1>Últimas do blog</h1>
+  </div>
+</ng-template>
+
+<ng-template #blogBodyTipsTemplate let-items="items">
+  <div class="tips">
+    <div class="row mb-3" *ngFor="let item of items">
+      <h3>{{item?.title}}</h3>
+      <h5>{{item?.description}}</h5>
+    </div>
+
+    <label class="h4">Ver mais</label>
+  </div>
+</ng-template>

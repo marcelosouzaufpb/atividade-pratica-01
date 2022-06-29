@@ -1,0 +1,31 @@
+.blog-body {
+  text-align: center;
+
+  h1 {
+    font-weight: bolder;
+  }
+
+  .tips {
+    padding-right: 30%;
+    padding-left: 30%;
+
+    .row {
+      text-align: justify;
+
+      h3 {
+        color: rgb(47, 85, 141);;
+      }
+
+      h5 {
+        opacity: 0.7;
+      }
+    }
+
+    label {
+      color: rgb(47, 85, 141);;
+      font-weight: bolder;
+      float: left;
+      cursor: pointer;
+    }
+  }
+}
