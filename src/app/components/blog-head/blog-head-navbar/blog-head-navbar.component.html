@@ -1,0 +1,7 @@
+<div class="blog-head-navbar">
+  <ul class="nav justify-content-center">
+    <li class="nav-item" *ngFor="let item of routing">
+      <a class="nav-link" routerLinkActive="active" routerLink="{{item?.link}}">{{item?.name}}</a>
+    </li>
+  </ul>
+</div>

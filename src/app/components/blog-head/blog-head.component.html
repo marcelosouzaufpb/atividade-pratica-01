@@ -1,0 +1,12 @@
+<section class="blog-head">
+  <ng-container [ngTemplateOutlet]="blogHeadTemplate"></ng-container>
+</section>
+
+<ng-template #blogHeadTemplate>
+  <div class="row mb-5">
+    <app-blog-head-navbar></app-blog-head-navbar>
+  </div>
+  <div class="row">
+    <app-blog-head-presentation></app-blog-head-presentation>
+  </div>
+</ng-template>
