@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FULL, HOME_ROUTING, NAME_PROJECT } from '../shared/http.routes.consts';
+import { BlogBodyModule } from '../components/blog-body/blog-body.module';
+import { BlogHeadModule } from '../components/blog-head/blog-head.module';
 
 export const routes: Routes = [
   {path: '', redirectTo: `${NAME_PROJECT}`, pathMatch: FULL},
@@ -33,7 +35,9 @@ export const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    BlogBodyModule,
+    BlogHeadModule
   ]
 })
 export class HomeModule {
